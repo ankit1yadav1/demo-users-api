@@ -9,4 +9,4 @@ app.use(bodyParser.json()); // application/json
 
 app.use(userRoutes);
 
-app.listen(5000);
+app.listen(process.env.port || 5000);
